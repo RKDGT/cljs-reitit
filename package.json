@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "shadow-cljs": "^2.14.5"
+  },
+  "dependencies": {
+    "analog-clock-react": "^1.2.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  }
+}
