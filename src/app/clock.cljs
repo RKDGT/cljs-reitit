@@ -24,11 +24,11 @@
 
 (defn get-current-time []
   (js/setInterval
-   #((if (not @display-custom)
+   #(if (not @display-custom)
        (let [date (new js/Date)]
          (swap! analog-clock-props assoc :seconds (.getSeconds date))
          (swap! analog-clock-props assoc :hours (.getHours date))
-         (swap! analog-clock-props assoc :minutes (.getMinutes date)))))
+         (swap! analog-clock-props assoc :minutes (.getMinutes date))))
    1000))
 
 (defn change-display []
